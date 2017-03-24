@@ -1,8 +1,9 @@
 require "sinatra/base"
+
 require "sinatra/json"
 
 require_relative "radar"
-
+puts "demo"
 class FlightSchool < Sinatra::Base
   get "/" do
     erb :index, locals: { airports: ["JFK", "SFO", "OHR", "FWA", "OAK", "SEA", "LAX"] }
